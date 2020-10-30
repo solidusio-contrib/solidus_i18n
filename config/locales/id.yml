@@ -41,7 +41,7 @@ id:
         presentation: Presentasi
       spree/order:
         checkout_complete: Checkout Selesai
-        completed_at: Terpenuhi Saat
+        completed_at: Selesai pada
         considered_risky: Dianggap berisiko
         coupon_code: Kode Kupon
         created_at: Tanggal Pemesanan
@@ -55,21 +55,21 @@ id:
         state: State
         total: Total
       spree/order/bill_address:
-        address1: Alamat penagihan nama jalan
-        city: Alamat penagihan kota
-        firstname: Alamat penagihan nama depan
-        lastname: Alamat penagihan nama keluarga
-        phone: Alamat penagihan nomor telepon
-        state: Alamat penagihan nama propinsi
-        zipcode: Alamat penagihan kode pos
+        address1: Alamat penagihan
+        city: Kota/Kab
+        firstname: Nama Depan
+        lastname: Nama Belakang
+        phone: Nomor telepon
+        state: Propinsi
+        zipcode: Kode pos
       spree/order/ship_address:
-        address1: Alamat pengiriman nama jalan
-        city: Alamat pengiriman kota
-        firstname: Alamat pengiriman nama depan
-        lastname: Alamat pengiriman nama keluarga
-        phone: Alamat pengirimian telepon
-        state: Alamat pengiriman provinsi
-        zipcode: Alamat pengiriman kode pos
+        address1: Alamat Pengiriman
+        city: Kota/Kab
+        firstname: Nama Depan
+        lastname: Nama Belakang
+        phone: Nomor telepon
+        state: Propinsi
+        zipcode: Kode pos
       spree/payment:
         amount: Jumlah
       spree/payment_method:
@@ -219,14 +219,14 @@ id:
       spree/option_value:
       spree/order:
         one: Pemesanan
-        other: Pemesanan lainnya
+        other: Pemesanan
       spree/payment:
         one: Pembayaran
-        other: Pembayaran lainnya
+        other: Pembayaran
       spree/payment_method:
       spree/product:
         one: Produk
-        other: Produk lainnya
+        other: Produk lain
       spree/promotion:
       spree/promotion_category:
       spree/property:
@@ -246,8 +246,8 @@ id:
         one: Peran
         other: Peran lainnya
       spree/shipment:
-        one: Pengiriman
-        other: Pengiriman lainnya
+        one: Pengiriman 1
+        other: Pengiriman
       spree/shipping_category:
         one: Kategori Pengiriman
         other: Kategori Pengiriman lainnya
@@ -305,9 +305,9 @@ id:
     activate: Aktivasi
     active: Aktif
     add: Tambahkan
-    add_action_of_type: Tambahkan Aksi Dari Tipe
+    add_action_of_type:
     add_country: Tambahkan Negara
-    add_coupon_code:
+    add_coupon_code: Tambahkan Kode Kupon
     add_new_header: Tambahkan Header
     add_new_style: Tambahkan Style Baru
     add_one: Tambahkan satu
@@ -360,7 +360,7 @@ id:
     all: Semua
     all_adjustments_closed: Semua penyesuaian berhasil ditutup!
     all_adjustments_opened: Semua penyesuaian berhasil dibuka!
-    all_departments: Semua departemen
+    all_departments: Cari Produk / Brands
     all_items_have_been_returned:
     allow_ssl_in_development_and_test: Memperbolehkan SSL untuk development dan test
     allow_ssl_in_production: Memperbolehkan SSL untuk production
@@ -466,10 +466,8 @@ id:
     country_based: Berdasarkan negara
     country_name: Nama Negara
     country_names:
-      CA:
-      FRA:
-      ITA:
       US:
+      ID:
     coupon: Kupon
     coupon_code: Kode kupon
     coupon_code_already_applied: Kode kupon suda diaplikasikan ke pemesanan ini sebelumnya.
@@ -587,7 +585,7 @@ id:
           contents_changed: Konten pemesanan berganti
         page_view: Halaman statis telah dilihat
         user:
-          signup: Pendaftaran pengguna
+          signup: Daftar akun baru sekarang
     exceptions:
       count_on_hand_setter:
     exchange_for:
@@ -629,7 +627,7 @@ id:
     i18n:
       available_locales:
       language: Bahasa
-      localization_settings: Pengaturan Lokalisasi
+      localization_settings: Pengaturan Bahasa
       this_file_language: Indonesian (ID)
     icon: Ikon
     identifier:
@@ -692,7 +690,7 @@ id:
     logged_in_succesfully: Login berhasil
     logged_out: Anda telah keluar.
     login: Login
-    login_as_existing: Login sebagai Pelanggan yang Terdaftar
+    login_as_existing: Login Pelanggan Lama
     login_failed: Otentikasi login gagal.
     login_name: Login
     logout: Keluar
@@ -701,7 +699,7 @@ id:
     make_refund: Melakukan pengembalian
     make_sure_the_above_reimbursement_amount_is_correct:
     manage_promotion_categories:
-    manage_variants:
+    manage_variants: Pengaturan Varian
     manual_intervention_required:
     master_price: Harga Master
     match_choices:
@@ -736,7 +734,7 @@ id:
     new_payment_method: Metode baru pembayaran
     new_product: Produk baru
     new_promotion: Promosi baru
-    new_promotion_category:
+    new_promotion_category: Kategori Promosi Baru
     new_property: Properti baru
     new_prototype: Prototipe baru
     new_refund:
@@ -869,15 +867,15 @@ id:
     payment_processor_choose_link: halaman pembayaran kami
     payment_state: Status pembayaran
     payment_states:
-      balance_due: Saldo
+      balance_due: Belum Lunas
       checkout: checkout
       completed: Selesai
       credit_owed: Kredit yang dimiliki
-      failed: gagal
-      paid: Terbayar
-      pending: tertunda
-      processing: pemprosesan
-      void: membatalkan
+      failed: Gagal
+      paid: Lunas
+      pending: Pending
+      processing: Diproses
+      void: Membatalkan
     payment_updated: Pembayaran diperbaharui
     payments: Pembayaran
     pending:
@@ -991,8 +989,8 @@ id:
     refund_reasons: Alasan Pengembalian Uang
     refunded_amount:
     refunds:
-    register: Mendaftar sebagai Pengguna Baru
-    registration: Pendaftaran
+    register: Daftar akun baru sekarang
+    registration: Silakan login ke akun kamu
     reimburse:
     reimbursed:
     reimbursement:
@@ -1057,7 +1055,7 @@ id:
     say_no: Tidak
     say_yes: Ya
     scope: Cakupan
-    search: Cari
+    search: Aku mau belanja ...
     search_results: Hasil Pencarian '%{keywords}'
     searching: Pencarian
     secure_connection_type: Jenis Koneksi Aman
@@ -1085,20 +1083,20 @@ id:
         shipment_summary: Rekap Pengiriman
         subject: Pemberitahuan Pengiriman
         thanks: Terima kasih untuk bisnis anda
-        track_information: 'Informasi Pelacakan: %{tracking}'
+        track_information: 'Info Pelacakan: %{tracking}'
         track_link:
     shipment_state: Status Pengiriman
     shipment_states:
-      backorder: backorder
-      canceled:
-      partial: Sebagian
-      pending: tunda
-      ready: siap
-      shipped: dikirim
+      backorder: Backorder
+      canceled: DIBATALKAN
+      partial: Partial
+      pending: Pending
+      ready: Siap
+      shipped: Sudah dikirim
     shipment_transfer_error:
     shipment_transfer_success:
     shipments: Pengiriman
-    shipped: Dikirim
+    shipped: Sudah dikirim
     shipping: Mengirimkan
     shipping_address: Alamat Pengiriman
     shipping_categories: Kategori Pengiriman
@@ -1235,7 +1233,7 @@ id:
     total_price: Total Harga
     total_sales:
     track_inventory:
-    tracking: Pelacakan
+    tracking: Pelacakan order
     tracking_number: Nomor Pelacakan
     tracking_url:
     tracking_url_placeholder: 'contoh: e.g. http://quickship.com/package?num=:tracking'
